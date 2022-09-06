@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+#
+#
+
+from jsb.lib.plugins import plugs
+from jsb.lib.boot import boot
+
+boot()
+plugs.loadall(force=True)
+
+t = "PLUGINLIST"
+print "= %s =\n" % t
+print "=" * (len(t) + 4)
+print "\n\n"
+
+for p, mod in plugs.iteritems():
+    print "== %s ==" % p, "\n", "~" * (len(p) + 6), "\n"
+    got = False
+    try:
+         res = mod.__doc__.strip()
+         if res: print "    %s" % res, "\n" ; got = True
+    except AttributeError: pass
+    if not got: print "    no docstring available\n"

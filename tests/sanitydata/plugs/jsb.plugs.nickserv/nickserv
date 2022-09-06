@@ -1,0 +1,7 @@
+{
+ "default-ConsoleBot": {
+  "password": "mekker", 
+  "identify": "identify", 
+  "nickserv": "NickServ"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "channels": {
+  "<channel>": [
+   [
+    "default-ConsoleBot", 
+    "console", 
+    "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff"
+   ]
+  ], 
+  "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff": []
+ }, 
+ "whitelist": [], 
+ "descriptions": {}
+}

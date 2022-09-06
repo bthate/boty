@@ -1,0 +1,25 @@
+{
+ "list": [
+  {
+   "duration": 0, 
+   "priority": 0, 
+   "txt": "test2", 
+   "warnsec": 0, 
+   "time": 0
+  }, 
+  {
+   "duration": 0, 
+   "priority": 5, 
+   "txt": "program the bot", 
+   "warnsec": 0, 
+   "time": 1317326400.0
+  }, 
+  {
+   "duration": 0, 
+   "priority": 0, 
+   "txt": "22:00 sleep", 
+   "warnsec": 0, 
+   "time": 1317326400.0
+  }
+ ]
+}

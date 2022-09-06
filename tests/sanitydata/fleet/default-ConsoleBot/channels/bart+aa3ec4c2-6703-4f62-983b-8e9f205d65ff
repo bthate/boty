@@ -1,0 +1,30 @@
+{
+ "tokens": [], 
+ "nick": "jsb", 
+ "enable": true, 
+ "key": "", 
+ "forwards": [], 
+ "ops": [
+  "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff"
+ ], 
+ "allowcommands": [
+  "learn"
+ ], 
+ "createdfrom": "jsb.lib.eventbase:180", 
+ "denyplug": [
+  "idle"
+ ], 
+ "cacheindex": 0, 
+ "cc": "!#", 
+ "passwords": {}, 
+ "silent": true, 
+ "allowwatch": [], 
+ "webchannels": [], 
+ "watched": [
+  "<channel>"
+ ], 
+ "feeds": [], 
+ "silentcommands": [], 
+ "id": "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff", 
+ "aliases": {}
+}

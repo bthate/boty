@@ -1,0 +1,65 @@
+#!/usr/bin/env python2.7
+#
+#
+
+""" boty shell bot. """
+
+## defines
+
+name = "boty-console"
+loglevel = "error"
+
+## basic imports
+
+import os
+import getpass
+import os
+import sys
+import optparse
+
+## path manipulation
+
+sys.path.insert(0, os.getcwd())
+
+## print version, set logging level
+
+from boty.version import getversion
+
+print getversion("CONSOLE")
+
+## command line option parsing
+
+from optparse import OptionParser
+parser = OptionParser(usage='usage: %prog [options] <appid>', version='%prog ' + getversion())
+parser.add_option('-d', '--datadir', type='string', default=False, dest='datadir', help="datadir to use")
+parser.add_option('-l', '--loglevel', type='string', default=False, dest='loglevel', help="logging level")
+parser.add_option('', '--nourl', action="store_true", default=False, dest='nourl', help="disable geturl functionality")
+
+opts, args = parser.parse_args()
+opts.args = args
+
+## set loglevel
+
+from jsb.utils.log import setloglevel
+setloglevel(opts.loglevel or "error", True)
+## boot the jsb system
+
+from boty.lib.boot import boot
+
+boot("boty-data")
+
+## console user is the owner
+
+from jsb.lib.config import Config
+
+cfg = Config("fleet" + os.sep + name + os.sep + 'config')
+if not cfg.owner: cfg.owner = []
+userid = getpass.getuser() + '@' + cfg.uuid
+if userid not in cfg.owner: cfg.owner.append(userid) ; cfg.save()
+
+## start the console bot
+
+from jsb.drivers.console.bot import ConsoleBot
+
+bot = ConsoleBot(cfg)
+bot.startshell()

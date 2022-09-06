@@ -1,0 +1,18 @@
+[
+ {
+  "printto": "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff", 
+  "idnr": 1, 
+  "nick": "bart", 
+  "time": 1317290400.0, 
+  "txt": "lunchtime", 
+  "botname": "default-ConsoleBot"
+ }, 
+ {
+  "printto": "bart@aa3ec4c2-6703-4f62-983b-8e9f205d65ff", 
+  "idnr": 2, 
+  "nick": "bart", 
+  "time": 1317256069.524239, 
+  "txt": "egg ready", 
+  "botname": "default-ConsoleBot"
+ }
+]

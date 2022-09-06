@@ -1,0 +1,6 @@
+{
+ "whitelist": [
+  "default-consolebot", 
+  "jsb@jsonbot.org"
+ ]
+}

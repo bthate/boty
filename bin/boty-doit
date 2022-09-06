@@ -1,0 +1,7 @@
+# create a boty-nest .. standalone distro based on eggs
+#
+#
+
+export PATH="./bin:.:$PATH"
+python setup.py sdist
+boty-nest -d boty-nest -f dist/boty-0.1.1.tar.gz

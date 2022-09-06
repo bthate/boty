@@ -1,0 +1,15 @@
+{
+ "status": [], 
+ "name": "dunker", 
+ "permits": [], 
+ "perms": [
+  "USER", 
+  "GUEST"
+ ], 
+ "deleted": true, 
+ "datadir": "tests/sanitydata", 
+ "userhosts": [
+  "bart@localhost"
+ ], 
+ "email": []
+}
